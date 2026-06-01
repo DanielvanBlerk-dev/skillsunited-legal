@@ -1,191 +1,576 @@
-SKILLS UNITED
-Terms of Service
-Last updated: 15/05/2026
-IMPORTANT: PLEASE READ THESE TERMS CAREFULLY. BY USING SKILLS UNITED, YOU AGREE TO THESE TERMS IN THEIR ENTIRETY. THESE TERMS CONTAIN CRITICAL PROVISIONS INCLUDING LIMITATIONS OF LIABILITY, INDEMNIFICATION OBLIGATIONS, AND A BINDING DISPUTE RESOLUTION PROCESS. IF YOU DO NOT AGREE, YOU MUST IMMEDIATELY CEASE USE OF THE APP.
-1. Parties, Acceptance, and Eligibility
-These Terms of Service ("Terms") constitute a legally binding agreement between you ("User", "you", "your") and dkvb.dev (ABN: 70 917 091 935) ("Operator", "we", "us", "our"), the operator of the Skills United mobile application ("App", "Platform", "Service").
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Service — Skills United</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1a2e;
+    --ink-soft: #4a4a6a;
+    --accent: #4f46e5;
+    --accent-light: #eef2ff;
+    --border: #e2e2f0;
+    --bg: #fafafa;
+    --white: #ffffff;
+    --section-num: #c7c7e0;
+    --warning-bg: #fff7ed;
+    --warning-border: #f97316;
+    --warning-text: #7c2d12;
+  }
 
-By creating an account, accessing, or using the App in any way, you unconditionally accept these Terms. If you are using the App on behalf of an organisation, you represent that you have authority to bind that organisation to these Terms.
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-You must be at least 18 years of age to use this App. By using the App, you represent and warrant that you are 18 years of age or older. If you are under 18, you are strictly prohibited from using the App.
+  html { scroll-behavior: smooth; }
 
-2. Nature of the Platform — We Are a Neutral Intermediary
-Skills United is a communications platform only. We do not provide skills, education, training, or any other service directly.
+  body {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.8;
+    font-size: 16px;
+  }
 
-The Operator's role is limited to providing a technology platform that enables independent users to connect with one another. We have no involvement in, control over, or responsibility for:
-•	The identity, qualifications, character, or intentions of any user
-•	The accuracy or truthfulness of any information posted by users
-•	Any agreement, arrangement, or transaction between users
-•	Any in-person meeting, skill exchange session, or interaction between users
-•	Any outcome, result, harm, or consequence arising from user interactions
+  /* Header */
+  header {
+    background: var(--ink);
+    color: var(--white);
+    padding: 60px 40px 50px;
+    position: relative;
+    overflow: hidden;
+  }
 
-The Operator is not a party to any arrangement between users. Any skill exchange, agreement, or interaction between users is solely between those users. The Operator expressly disclaims any responsibility for such arrangements.
+  header::before {
+    content: '';
+    position: absolute;
+    top: -60px; right: -60px;
+    width: 300px; height: 300px;
+    border-radius: 50%;
+    background: var(--accent);
+    opacity: 0.15;
+  }
 
-3. No Verification of Users or Content
-THE OPERATOR DOES NOT VERIFY, SCREEN, BACKGROUND CHECK, OR AUTHENTICATE ANY USER OR ANY CONTENT POSTED BY USERS.
+  header::after {
+    content: '';
+    position: absolute;
+    bottom: -80px; left: 40%;
+    width: 200px; height: 200px;
+    border-radius: 50%;
+    background: var(--accent);
+    opacity: 0.08;
+  }
 
-You acknowledge and agree that:
-•	We do not verify the identity of any user
-•	We do not verify any claimed qualifications, skills, credentials, licences, or expertise of any user
-•	We do not conduct criminal history or background checks on any user
-•	We do not verify the accuracy of any user-submitted content
-•	A user's profile, skills listing, or any other information may be false, misleading, or incomplete
-•	You interact with other users entirely at your own risk
+  .header-inner {
+    max-width: 740px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
 
-Any decision to interact with, meet, or engage in a skill exchange with another user is made entirely at your own discretion and risk. The Operator shall have no liability whatsoever for any harm, loss, or damage arising from your reliance on any user's profile or representations.
+  .app-name {
+    font-family: 'DM Serif Display', serif;
+    font-size: 13px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 16px;
+    display: block;
+  }
 
-4. User Conduct and Sole Responsibility for Conduct
-4.1 Your Sole Responsibility
-You are solely and exclusively responsible for your conduct on and off the Platform. The Operator bears no responsibility for any action, statement, or conduct of any user, including you.
+  header h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 400;
+    line-height: 1.15;
+    margin-bottom: 20px;
+  }
 
-4.2 Prohibited Conduct
-You agree that you will not use Skills United to:
-•	Engage in, facilitate, plan, or discuss any illegal activity
-•	Harass, stalk, threaten, intimidate, or harm any person
-•	Engage in fraud, deception, or misrepresentation
-•	Solicit money, financial information, passwords, or sensitive personal data
-•	Engage in any form of sexual harassment or exploitation
-•	Contact minors for any purpose
-•	Distribute or share illegal, defamatory, obscene, or harmful content
-•	Violate any applicable law or regulation of any jurisdiction
-•	Attempt to circumvent, hack, or disrupt the Platform
-•	Use another person's account or impersonate any person
-•	Engage in any discriminatory conduct prohibited by law
-•	Use the Platform for commercial solicitation or advertising without our consent
+  .meta {
+    font-size: 13px;
+    color: rgba(255,255,255,0.5);
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
 
-4.3 Criminal Conduct
-Any user who engages in criminal conduct using or in connection with the Platform does so entirely on their own accord and bears sole criminal and civil responsibility for such conduct. The Operator is not a participant in, facilitator of, or party to any criminal act committed by users. Users who engage in criminal conduct will be permanently banned from the Platform and their details may be provided to law enforcement authorities where required by law.
+  /* Warning banner */
+  .warning {
+    background: var(--warning-bg);
+    border-left: 3px solid var(--warning-border);
+    max-width: 740px;
+    margin: 48px auto 0;
+    padding: 28px 36px;
+    border-radius: 0 8px 8px 0;
+  }
 
-4.4 Reporting Obligations
-We comply with all applicable mandatory reporting obligations under Australian law. Where we become aware of content or conduct that we are legally required to report to authorities, we will do so. This may include reporting certain content to the Australian Federal Police, the eSafety Commissioner, or other relevant authorities.
+  .warning-label {
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--warning-border);
+    margin-bottom: 10px;
+  }
 
-5. Comprehensive Disclaimer of Liability
-5.1 Platform Liability
-TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE OPERATOR, ITS OFFICERS, DIRECTORS, EMPLOYEES, CONTRACTORS, AGENTS, AFFILIATES, AND SUCCESSORS EXPRESSLY DISCLAIM ALL LIABILITY FOR ANY LOSS, DAMAGE, INJURY, OR HARM OF ANY KIND WHATSOEVER ARISING FROM OR RELATED TO:
-•	Any act, omission, conduct, or content of any user of the Platform
-•	Any in-person interaction, meeting, or skill exchange between users
-•	Any illegal conduct committed by any user
-•	Any physical harm, injury, or death arising from user interactions
-•	Any financial loss arising from interactions with other users
-•	Any emotional distress, psychological harm, or reputational damage
-•	Any reliance on information provided by other users
-•	The unavailability, interruption, or malfunction of the Platform
-•	Unauthorised access to or breach of your account or data
-•	Any loss of data or content
+  .warning p {
+    font-size: 14px;
+    color: var(--warning-text);
+    line-height: 1.7;
+    font-weight: 400;
+  }
 
-5.2 No Duty of Care
-The Operator owes no duty of care to you or any third party in respect of the conduct of other users. We are a passive platform provider. We do not monitor, moderate, or supervise user interactions in real time and we have no obligation to do so.
+  /* Main content */
+  main {
+    max-width: 740px;
+    margin: 0 auto;
+    padding: 56px 40px 80px;
+  }
 
-5.3 Third Party Actions
-The Operator has no control over and assumes no responsibility for the actions of any user or third party. You acknowledge that other users are independent individuals whose conduct is beyond our control.
+  /* Section */
+  .section {
+    margin-bottom: 52px;
+    padding-bottom: 52px;
+    border-bottom: 1px solid var(--border);
+  }
 
-5.4 Cap on Liability
-To the extent that any liability of the Operator cannot be excluded under applicable law, our total cumulative liability to you for all claims arising from or related to these Terms or your use of the Platform is limited to the greater of: (a) AUD $100; or (b) the amount you paid to us in the 12 months preceding the claim (if any). This limitation applies regardless of the form of action, whether in contract, tort, statute, or otherwise.
+  .section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
 
-5.5 Consequential Loss
-IN NO EVENT SHALL THE OPERATOR BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, PUNITIVE, OR CONSEQUENTIAL DAMAGES OF ANY KIND, INCLUDING LOSS OF PROFITS, LOSS OF DATA, LOSS OF GOODWILL, BUSINESS INTERRUPTION, OR ANY OTHER INTANGIBLE LOSSES, EVEN IF THE OPERATOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+  .section-header {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
 
-6. Indemnification
-6.1 Your Indemnification Obligations
-You agree to fully indemnify, defend, and hold harmless the Operator and its officers, directors, employees, contractors, agents, affiliates, successors, and assigns from and against any and all claims, demands, actions, proceedings, liabilities, losses, damages, penalties, fines, costs, and expenses (including reasonable legal fees and disbursements) arising out of or in any way connected with:
-•	Your use of or access to the Platform
-•	Your violation of these Terms
-•	Your violation of any applicable law or regulation
-•	Your conduct on or off the Platform, including any illegal conduct
-•	Any content you submit, post, or transmit through the Platform
-•	Your interaction with any other user, whether online or in person
-•	Any harm you cause to any other user or third party
-•	Any claim by a third party arising from your use of the Platform
-•	Any misrepresentation made by you
+  .section-num {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2rem;
+    color: var(--section-num);
+    line-height: 1;
+    flex-shrink: 0;
+    min-width: 36px;
+  }
 
-6.2 Indemnification Procedure
-The Operator reserves the right to assume exclusive control of the defence and settlement of any matter subject to indemnification by you, at your expense. You agree to cooperate fully with the Operator in the defence of any such matter. You may not settle any claim that imposes any obligation on the Operator without our prior written consent.
+  h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--ink);
+    line-height: 1.2;
+  }
 
-7. User Content
-7.1 Responsibility for Content
-You are solely responsible for all content you submit, post, or transmit through the Platform, including your profile, skills listings, photographs, and messages. The Operator does not endorse, adopt, or take responsibility for any user-generated content.
+  h3 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 28px 0 12px;
+  }
 
-7.2 Content Licence
-By submitting content to the Platform, you grant the Operator a non-exclusive, worldwide, royalty-free, sublicensable, and transferable licence to use, reproduce, distribute, display, and process such content solely for the purpose of operating and improving the Service.
+  p {
+    color: var(--ink-soft);
+    margin-bottom: 16px;
+    font-size: 15px;
+  }
 
-7.3 Content Removal
-We reserve the right, but not the obligation, to monitor, remove, or restrict access to any user content at any time for any reason, including where we determine in our sole discretion that the content violates these Terms or any applicable law. Our decision to remove or not remove content does not constitute an endorsement of any remaining content and does not give rise to any liability on our part.
+  p:last-child { margin-bottom: 0; }
 
-7.4 Reporting Illegal Content
-If you encounter content that you believe is illegal or violates these Terms, please report it using the in-app reporting function. We will review reports and take action where appropriate, but we make no guarantee as to the timeliness or outcome of any review.
+  p.caps {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--ink);
+    line-height: 1.7;
+    background: #f3f4f6;
+    border-radius: 6px;
+    padding: 16px 20px;
+    margin-bottom: 16px;
+  }
 
-8. Platform Availability, Modifications, and Termination
-The Operator reserves the right at any time and without notice to:
-•	Modify, suspend, or discontinue the Platform or any part thereof
-•	Modify these Terms
-•	Suspend or terminate any user's access to the Platform
-•	Delete any user content
-•	Impose usage limits or restrictions
+  ul {
+    list-style: none;
+    margin: 8px 0 16px;
+    padding: 0;
+  }
 
-The Operator shall not be liable to you or any third party for any modification, suspension, or discontinuation of the Platform. You acknowledge that the Platform may be unavailable from time to time due to maintenance, updates, or technical issues, and the Operator accepts no liability for such unavailability.
+  ul li {
+    font-size: 15px;
+    color: var(--ink-soft);
+    padding: 6px 0 6px 20px;
+    position: relative;
+    border-bottom: 1px solid var(--border);
+  }
 
-9. Intellectual Property
-All rights, title, and interest in and to the Platform, including its design, code, trademarks, logos, and content created by the Operator, are and shall remain the exclusive property of [YOUR FULL NAME / COMPANY NAME]. Nothing in these Terms grants you any right to use our intellectual property without our prior written consent. Any feedback, suggestions, or ideas you provide regarding the Platform may be used by us without restriction or compensation to you.
+  ul li:last-child { border-bottom: none; }
 
-10. Privacy and Data
-Our collection and use of your personal information is governed by our Privacy Policy, which is incorporated into these Terms by reference and is available within the App. By using the Platform, you consent to the collection, use, storage, and disclosure of your personal information as described in our Privacy Policy.
+  ul li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: 500;
+  }
 
-You acknowledge that the Platform uses third-party services including Google Firebase for data storage and authentication. Your data may be processed and stored on servers located outside Australia. By using the Platform, you consent to such processing and storage.
+  a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s;
+  }
 
-11. Compliance with Australian Online Safety Laws
-The Operator complies with the Online Safety Act 2021 (Cth) and cooperates with the eSafety Commissioner. If you encounter content that you believe constitutes cyberbullying material, non-consensual sharing of intimate images, or other material regulated under the Online Safety Act, please report it immediately using the in-app report function.
+  a:hover { border-bottom-color: var(--accent); }
 
-We will respond to removal notices from the eSafety Commissioner in accordance with our obligations under applicable law. Users who post content regulated under the Online Safety Act may have their accounts terminated and may be reported to relevant authorities.
+  /* Contact card */
+  .contact-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 28px 32px;
+    margin-top: 20px;
+  }
 
-12. Governing Law and Jurisdiction
-These Terms are governed by the laws of Queensland, Australia. You irrevocably submit to the exclusive jurisdiction of the courts of Queensland, Australia for the resolution of any dispute arising from or related to these Terms or the Platform.
+  .contact-card p {
+    margin: 0;
+    line-height: 2;
+  }
 
-To the extent permitted by law, you waive any objection to the jurisdiction of such courts on the grounds of inconvenient forum or otherwise.
+  .contact-card strong {
+    color: var(--ink);
+    font-weight: 500;
+  }
 
-13. Australian Consumer Law
-Nothing in these Terms is intended to exclude, restrict, or modify any guarantee, condition, warranty, right, or remedy that cannot be excluded under the Australian Consumer Law (Schedule 2 to the Competition and Consumer Act 2010 (Cth)) or any other non-excludable applicable legislation.
+  /* Acknowledgment block */
+  .acknowledgment {
+    background: var(--ink);
+    color: rgba(255,255,255,0.75);
+    border-radius: 10px;
+    padding: 32px 36px;
+    margin-top: 48px;
+    font-size: 14px;
+    line-height: 1.8;
+  }
 
-To the extent that the Australian Consumer Law applies and permits limitation of liability, where our services come with a non-excludable guarantee, our liability for a failure to comply with such a guarantee is limited, at our option, to: (a) resupplying the services; or (b) paying the cost of having the services resupplied.
+  .acknowledgment strong {
+    display: block;
+    color: var(--white);
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
 
-14. Dispute Resolution
-14.1 Informal Resolution
-Before commencing any formal dispute proceedings, you agree to contact us at vanblerkdaniel@gmail.com and attempt to resolve the dispute informally for a period of not less than 30 days.
+  /* Footer */
+  footer {
+    background: var(--ink);
+    color: rgba(255,255,255,0.4);
+    text-align: center;
+    padding: 32px 40px;
+    font-size: 13px;
+  }
 
-14.2 Mediation
-If a dispute cannot be resolved informally, either party may refer the dispute to mediation administered by the Resolution Institute (or such other mutually agreed mediation body) before commencing litigation. The costs of mediation shall be shared equally unless otherwise agreed.
+  footer strong { color: rgba(255,255,255,0.7); }
 
-14.3 Class Action Waiver
-To the maximum extent permitted by applicable law, you agree that any dispute resolution proceedings will be conducted on an individual basis only. You waive any right to participate in a class action, collective action, or representative proceeding against the Operator.
+  /* Responsive */
+  @media (max-width: 600px) {
+    header { padding: 44px 24px 40px; }
+    main { padding: 40px 24px 60px; }
+    .warning { margin: 32px 24px 0; padding: 20px 24px; }
+    .section-num { font-size: 1.5rem; min-width: 28px; }
+    h2 { font-size: 1.25rem; }
+    .acknowledgment { padding: 24px; }
+  }
+</style>
+</head>
+<body>
 
-15. General Provisions
-15.1 Entire Agreement
-These Terms, together with the Privacy Policy, constitute the entire agreement between you and the Operator regarding your use of the Platform and supersede all prior agreements, representations, and understandings.
+<header>
+  <div class="header-inner">
+    <span class="app-name">Skills United</span>
+    <h1>Terms of Service</h1>
+    <div class="meta">
+      <span>Last updated: 15 May 2026</span>
+    </div>
+  </div>
+</header>
 
-15.2 Severability
-If any provision of these Terms is found by a court of competent jurisdiction to be invalid, illegal, or unenforceable, such provision shall be modified to the minimum extent necessary to make it enforceable, and the remaining provisions shall continue in full force and effect.
+<div class="warning">
+  <div class="warning-label">Important — please read carefully</div>
+  <p>By using Skills United, you agree to these Terms in their entirety. These Terms contain critical provisions including limitations of liability, indemnification obligations, and a binding dispute resolution process. If you do not agree, you must immediately cease use of the App.</p>
+</div>
 
-15.3 No Waiver
-The Operator's failure to enforce any right or provision of these Terms shall not constitute a waiver of such right or provision. Any waiver must be in writing and signed by an authorised representative of the Operator.
+<main>
 
-15.4 Assignment
-You may not assign or transfer any rights or obligations under these Terms without our prior written consent. The Operator may freely assign these Terms, including in connection with a merger, acquisition, sale of assets, or by operation of law.
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">1</span>
+      <h2>Parties, Acceptance, and Eligibility</h2>
+    </div>
+    <p>These Terms of Service ("Terms") constitute a legally binding agreement between you ("User", "you", "your") and <strong>dkvb.dev</strong> (ABN: 70 917 091 935) ("Operator", "we", "us", "our"), the operator of the Skills United mobile application ("App", "Platform", "Service").</p>
+    <p>By creating an account, accessing, or using the App in any way, you unconditionally accept these Terms. If you are using the App on behalf of an organisation, you represent that you have authority to bind that organisation to these Terms.</p>
+    <p>You must be at least <strong>18 years of age</strong> to use this App. By using the App, you represent and warrant that you are 18 years of age or older. If you are under 18, you are strictly prohibited from using the App.</p>
+  </div>
 
-15.5 Force Majeure
-The Operator shall not be liable for any failure or delay in performance resulting from causes beyond our reasonable control, including acts of God, natural disasters, pandemic, war, terrorism, government actions, telecommunications failures, or third-party service failures.
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">2</span>
+      <h2>Nature of the Platform — We Are a Neutral Intermediary</h2>
+    </div>
+    <p>Skills United is a communications platform only. We do not provide skills, education, training, or any other service directly.</p>
+    <p>The Operator's role is limited to providing a technology platform that enables independent users to connect with one another. We have no involvement in, control over, or responsibility for:</p>
+    <ul>
+      <li>The identity, qualifications, character, or intentions of any user</li>
+      <li>The accuracy or truthfulness of any information posted by users</li>
+      <li>Any agreement, arrangement, or transaction between users</li>
+      <li>Any in-person meeting, skill exchange session, or interaction between users</li>
+      <li>Any outcome, result, harm, or consequence arising from user interactions</li>
+    </ul>
+    <p>The Operator is not a party to any arrangement between users. Any skill exchange, agreement, or interaction between users is solely between those users. The Operator expressly disclaims any responsibility for such arrangements.</p>
+  </div>
 
-15.6 No Partnership or Agency
-Nothing in these Terms creates any partnership, joint venture, agency, franchise, or employment relationship between you and the Operator. You have no authority to make any representation or commitment on behalf of the Operator.
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">3</span>
+      <h2>No Verification of Users or Content</h2>
+    </div>
+    <p class="caps">The Operator does not verify, screen, background check, or authenticate any user or any content posted by users.</p>
+    <p>You acknowledge and agree that:</p>
+    <ul>
+      <li>We do not verify the identity of any user</li>
+      <li>We do not verify any claimed qualifications, skills, credentials, licences, or expertise of any user</li>
+      <li>We do not conduct criminal history or background checks on any user</li>
+      <li>We do not verify the accuracy of any user-submitted content</li>
+      <li>A user's profile, skills listing, or any other information may be false, misleading, or incomplete</li>
+      <li>You interact with other users entirely at your own risk</li>
+    </ul>
+    <p>Any decision to interact with, meet, or engage in a skill exchange with another user is made entirely at your own discretion and risk. The Operator shall have no liability whatsoever for any harm, loss, or damage arising from your reliance on any user's profile or representations.</p>
+  </div>
 
-15.7 Changes to Terms
-We reserve the right to modify these Terms at any time. Material changes will be notified through the App or by email where reasonably practicable. Your continued use of the Platform following notification of changes constitutes your acceptance of the revised Terms. If you do not accept the revised Terms, you must immediately cease using the App and may delete your account.
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">4</span>
+      <h2>User Conduct and Sole Responsibility for Conduct</h2>
+    </div>
 
-16. Contact Information
-For any questions, concerns, or notices under these Terms, please contact:
+    <h3>4.1 Your Sole Responsibility</h3>
+    <p>You are solely and exclusively responsible for your conduct on and off the Platform. The Operator bears no responsibility for any action, statement, or conduct of any user, including you.</p>
 
-Daniel van Blerk / dkvb.dev
-Email: vanblerkdaniel@gmail.com
-Address: PMB1, Ingham, Qld 4850, Australia
-ABN: 70 917 091 935
+    <h3>4.2 Prohibited Conduct</h3>
+    <p>You agree that you will not use Skills United to:</p>
+    <ul>
+      <li>Engage in, facilitate, plan, or discuss any illegal activity</li>
+      <li>Harass, stalk, threaten, intimidate, or harm any person</li>
+      <li>Engage in fraud, deception, or misrepresentation</li>
+      <li>Solicit money, financial information, passwords, or sensitive personal data</li>
+      <li>Engage in any form of sexual harassment or exploitation</li>
+      <li>Contact minors for any purpose</li>
+      <li>Distribute or share illegal, defamatory, obscene, or harmful content</li>
+      <li>Violate any applicable law or regulation of any jurisdiction</li>
+      <li>Attempt to circumvent, hack, or disrupt the Platform</li>
+      <li>Use another person's account or impersonate any person</li>
+      <li>Engage in any discriminatory conduct prohibited by law</li>
+      <li>Use the Platform for commercial solicitation or advertising without our consent</li>
+    </ul>
 
+    <h3>4.3 Criminal Conduct</h3>
+    <p>Any user who engages in criminal conduct using or in connection with the Platform does so entirely on their own accord and bears sole criminal and civil responsibility for such conduct. Users who engage in criminal conduct will be permanently banned from the Platform and their details may be provided to law enforcement authorities where required by law.</p>
 
-ACKNOWLEDGMENT: BY USING SKILLS UNITED, YOU ACKNOWLEDGE THAT YOU HAVE READ THESE TERMS IN FULL, THAT YOU UNDERSTAND THEM, AND THAT YOU AGREE TO BE LEGALLY BOUND BY THEM. YOU FURTHER ACKNOWLEDGE THAT YOU ARE SOLELY RESPONSIBLE FOR YOUR OWN CONDUCT AND SAFETY WHEN USING THIS PLATFORM, AND THAT THE OPERATOR IS A NEUTRAL TECHNOLOGY INTERMEDIARY WITH NO RESPONSIBILITY FOR THE ACTIONS OF OTHER USERS.
+    <h3>4.4 Reporting Obligations</h3>
+    <p>We comply with all applicable mandatory reporting obligations under Australian law. Where we become aware of content or conduct that we are legally required to report to authorities, we will do so. This may include reporting to the Australian Federal Police, the eSafety Commissioner, or other relevant authorities.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">5</span>
+      <h2>Comprehensive Disclaimer of Liability</h2>
+    </div>
+
+    <h3>5.1 Platform Liability</h3>
+    <p class="caps">To the maximum extent permitted by applicable law, the Operator expressly disclaims all liability for any loss, damage, injury, or harm of any kind arising from or related to any act or omission of any user, any in-person interaction between users, any illegal conduct by any user, or any reliance on user-provided information.</p>
+
+    <h3>5.2 No Duty of Care</h3>
+    <p>The Operator owes no duty of care to you or any third party in respect of the conduct of other users. We are a passive platform provider. We do not monitor, moderate, or supervise user interactions in real time and we have no obligation to do so.</p>
+
+    <h3>5.3 Third Party Actions</h3>
+    <p>The Operator has no control over and assumes no responsibility for the actions of any user or third party. You acknowledge that other users are independent individuals whose conduct is beyond our control.</p>
+
+    <h3>5.4 Cap on Liability</h3>
+    <p>To the extent that any liability of the Operator cannot be excluded under applicable law, our total cumulative liability to you for all claims is limited to the greater of: (a) AUD $100; or (b) the amount you paid to us in the 12 months preceding the claim (if any).</p>
+
+    <h3>5.5 Consequential Loss</h3>
+    <p class="caps">In no event shall the Operator be liable for any indirect, incidental, special, exemplary, punitive, or consequential damages of any kind, including loss of profits, loss of data, loss of goodwill, or business interruption, even if advised of the possibility of such damages.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">6</span>
+      <h2>Indemnification</h2>
+    </div>
+
+    <h3>6.1 Your Indemnification Obligations</h3>
+    <p>You agree to fully indemnify, defend, and hold harmless the Operator and its officers, directors, employees, contractors, agents, affiliates, successors, and assigns from and against any and all claims, liabilities, losses, damages, costs, and expenses (including reasonable legal fees) arising out of or connected with:</p>
+    <ul>
+      <li>Your use of or access to the Platform</li>
+      <li>Your violation of these Terms or any applicable law</li>
+      <li>Your conduct on or off the Platform, including any illegal conduct</li>
+      <li>Any content you submit, post, or transmit through the Platform</li>
+      <li>Your interaction with any other user, whether online or in person</li>
+      <li>Any harm you cause to any other user or third party</li>
+      <li>Any misrepresentation made by you</li>
+    </ul>
+
+    <h3>6.2 Indemnification Procedure</h3>
+    <p>The Operator reserves the right to assume exclusive control of the defence and settlement of any matter subject to indemnification by you, at your expense. You may not settle any claim that imposes any obligation on the Operator without our prior written consent.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">7</span>
+      <h2>User Content</h2>
+    </div>
+
+    <h3>7.1 Responsibility for Content</h3>
+    <p>You are solely responsible for all content you submit, post, or transmit through the Platform. The Operator does not endorse, adopt, or take responsibility for any user-generated content.</p>
+
+    <h3>7.2 Content Licence</h3>
+    <p>By submitting content to the Platform, you grant the Operator a non-exclusive, worldwide, royalty-free, sublicensable, and transferable licence to use, reproduce, distribute, display, and process such content solely for the purpose of operating and improving the Service.</p>
+
+    <h3>7.3 Content Removal</h3>
+    <p>We reserve the right, but not the obligation, to monitor, remove, or restrict access to any user content at any time for any reason, including where we determine in our sole discretion that the content violates these Terms or any applicable law.</p>
+
+    <h3>7.4 Reporting Illegal Content</h3>
+    <p>If you encounter content that you believe is illegal or violates these Terms, please report it using the in-app reporting function. We will review reports and take action where appropriate.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">8</span>
+      <h2>Platform Availability, Modifications, and Termination</h2>
+    </div>
+    <p>The Operator reserves the right at any time and without notice to modify, suspend, or discontinue the Platform; modify these Terms; suspend or terminate any user's access; delete any user content; or impose usage limits or restrictions.</p>
+    <p>The Operator shall not be liable to you or any third party for any modification, suspension, or discontinuation of the Platform.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">9</span>
+      <h2>Intellectual Property</h2>
+    </div>
+    <p>All rights, title, and interest in and to the Platform, including its design, code, trademarks, logos, and Operator-created content, are and shall remain the exclusive property of dkvb.dev. Nothing in these Terms grants you any right to use our intellectual property without our prior written consent.</p>
+    <p>Any feedback, suggestions, or ideas you provide regarding the Platform may be used by us without restriction or compensation to you.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">10</span>
+      <h2>Privacy and Data</h2>
+    </div>
+    <p>Our collection and use of your personal information is governed by our <a href="privacy.html">Privacy Policy</a>, which is incorporated into these Terms by reference. By using the Platform, you consent to the collection, use, storage, and disclosure of your personal information as described in our Privacy Policy.</p>
+    <p>You acknowledge that the Platform uses third-party services including Google Firebase for data storage and authentication. Your data may be processed and stored on servers located outside Australia.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">11</span>
+      <h2>Compliance with Australian Online Safety Laws</h2>
+    </div>
+    <p>The Operator complies with the <em>Online Safety Act 2021</em> (Cth) and cooperates with the eSafety Commissioner. If you encounter content that constitutes cyberbullying material, non-consensual sharing of intimate images, or other material regulated under the Online Safety Act, please report it immediately using the in-app report function.</p>
+    <p>We will respond to removal notices from the eSafety Commissioner in accordance with our obligations under applicable law. Users who post such content may have their accounts terminated and may be reported to relevant authorities.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">12</span>
+      <h2>Governing Law and Jurisdiction</h2>
+    </div>
+    <p>These Terms are governed by the laws of Queensland, Australia. You irrevocably submit to the exclusive jurisdiction of the courts of Queensland, Australia for the resolution of any dispute arising from or related to these Terms or the Platform.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">13</span>
+      <h2>Australian Consumer Law</h2>
+    </div>
+    <p>Nothing in these Terms is intended to exclude, restrict, or modify any guarantee, condition, warranty, right, or remedy that cannot be excluded under the Australian Consumer Law (Schedule 2 to the <em>Competition and Consumer Act 2010</em> (Cth)) or any other non-excludable applicable legislation.</p>
+    <p>To the extent that the Australian Consumer Law applies and permits limitation of liability, our liability for a failure to comply with a non-excludable guarantee is limited, at our option, to: (a) resupplying the services; or (b) paying the cost of having the services resupplied.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">14</span>
+      <h2>Dispute Resolution</h2>
+    </div>
+
+    <h3>14.1 Informal Resolution</h3>
+    <p>Before commencing any formal dispute proceedings, you agree to contact us at <a href="mailto:vanblerkdaniel@gmail.com">vanblerkdaniel@gmail.com</a> and attempt to resolve the dispute informally for a period of not less than 30 days.</p>
+
+    <h3>14.2 Mediation</h3>
+    <p>If a dispute cannot be resolved informally, either party may refer the dispute to mediation administered by the Resolution Institute before commencing litigation. The costs of mediation shall be shared equally unless otherwise agreed.</p>
+
+    <h3>14.3 Class Action Waiver</h3>
+    <p>To the maximum extent permitted by applicable law, you agree that any dispute resolution proceedings will be conducted on an individual basis only. You waive any right to participate in a class action, collective action, or representative proceeding against the Operator.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">15</span>
+      <h2>General Provisions</h2>
+    </div>
+
+    <h3>15.1 Entire Agreement</h3>
+    <p>These Terms, together with the Privacy Policy, constitute the entire agreement between you and the Operator regarding your use of the Platform and supersede all prior agreements, representations, and understandings.</p>
+
+    <h3>15.2 Severability</h3>
+    <p>If any provision of these Terms is found to be invalid, illegal, or unenforceable, such provision shall be modified to the minimum extent necessary to make it enforceable, and the remaining provisions shall continue in full force and effect.</p>
+
+    <h3>15.3 No Waiver</h3>
+    <p>The Operator's failure to enforce any right or provision of these Terms shall not constitute a waiver of such right or provision. Any waiver must be in writing and signed by an authorised representative of the Operator.</p>
+
+    <h3>15.4 Assignment</h3>
+    <p>You may not assign or transfer any rights or obligations under these Terms without our prior written consent. The Operator may freely assign these Terms, including in connection with a merger, acquisition, or sale of assets.</p>
+
+    <h3>15.5 Force Majeure</h3>
+    <p>The Operator shall not be liable for any failure or delay in performance resulting from causes beyond our reasonable control, including acts of God, natural disasters, pandemic, war, terrorism, government actions, telecommunications failures, or third-party service failures.</p>
+
+    <h3>15.6 No Partnership or Agency</h3>
+    <p>Nothing in these Terms creates any partnership, joint venture, agency, franchise, or employment relationship between you and the Operator.</p>
+
+    <h3>15.7 Changes to Terms</h3>
+    <p>We reserve the right to modify these Terms at any time. Material changes will be notified through the App or by email where reasonably practicable. Your continued use of the Platform following notification of changes constitutes your acceptance of the revised Terms.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">16</span>
+      <h2>Contact Information</h2>
+    </div>
+    <p>For any questions, concerns, or notices under these Terms, please contact:</p>
+    <div class="contact-card">
+      <p>
+        <strong>Daniel van Blerk / dkvb.dev</strong><br>
+        Email: <a href="mailto:vanblerkdaniel@gmail.com">vanblerkdaniel@gmail.com</a><br>
+        Address: PMB1, Ingham, Qld 4850, Australia<br>
+        ABN: 70 917 091 935
+      </p>
+    </div>
+  </div>
+
+  <div class="acknowledgment">
+    <strong>Acknowledgment</strong>
+    By using Skills United, you acknowledge that you have read these Terms in full, that you understand them, and that you agree to be legally bound by them. You further acknowledge that you are solely responsible for your own conduct and safety when using this Platform, and that the Operator is a neutral technology intermediary with no responsibility for the actions of other users.
+  </div>
+
+</main>
+
+<footer>
+  <p>These Terms are governed by the laws of Queensland, Australia.<br>
+  <strong>Skills United</strong> · dkvb.dev · ABN: 70 917 091 935</p>
+</footer>
+
+</body>
+</html>

@@ -1,213 +1,561 @@
-SKILLS UNITED
-Privacy Policy
-Last updated: 15/05/2026
-Effective date: 15/05/2026
-PRIVACY AT A GLANCE
-We collect information you provide when registering and using the App, including your name, username, email, bio, and skills. We use Firebase (Google) to store your data. We do not sell your personal information. Messages between users are stored in our database. You can request deletion of your account and data by contacting us.
-1. Introduction and Who We Are
-This Privacy Policy describes how dkvb.dev (ABN: 70 917 091 935) ("we", "us", "our", "Operator") collects, uses, stores, discloses, and protects personal information in connection with the Skills United mobile application ("App", "Platform", "Service").
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Skills United</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1a2e;
+    --ink-soft: #4a4a6a;
+    --accent: #4f46e5;
+    --accent-light: #eef2ff;
+    --border: #e2e2f0;
+    --bg: #fafafa;
+    --white: #ffffff;
+    --section-num: #c7c7e0;
+  }
 
-We are committed to protecting your privacy and handling your personal information in accordance with the Privacy Act 1988 (Cth) ("Privacy Act") and the Australian Privacy Principles ("APPs") contained in Schedule 1 of the Privacy Act.
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-By using Skills United, you consent to the collection, use, and disclosure of your personal information as described in this Privacy Policy. If you do not agree with this Privacy Policy, please do not use the App.
+  html { scroll-behavior: smooth; }
 
-2. Information We Collect
-2.1 Information You Provide Directly
-When you register for and use Skills United, we collect information that you provide to us directly, including:
-•	Full name
-•	Username (chosen by you, displayed publicly on your profile)
-•	Email address
-•	Password (stored in encrypted form — we do not have access to your plain-text password)
-•	Profile biography / bio text
-•	Skills you list as willing to teach
-•	Skills you list as wanting to learn
-•	Phone number (only if you choose to enable two-factor authentication)
-•	Messages you send to other users through the in-app chat
-•	Reports you submit about other users
+  body {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.8;
+    font-size: 16px;
+  }
 
-2.2 Information Collected Automatically
-When you use the App, we and our service providers may automatically collect certain technical information, including:
-•	Device type and operating system version
-•	App version
-•	Date and time of access
-•	Firebase Analytics data (aggregated usage statistics)
-•	Crash reports and error logs
-•	Authentication tokens and session data
+  /* Header */
+  header {
+    background: var(--ink);
+    color: var(--white);
+    padding: 60px 40px 50px;
+    position: relative;
+    overflow: hidden;
+  }
 
-2.3 Information from Third-Party Services
-If you choose to sign in using Google Sign-In, we may receive your name and email address from Google. We do not receive your Google password. The information we receive from Google is governed by Google's Privacy Policy in addition to this Privacy Policy.
+  header::before {
+    content: '';
+    position: absolute;
+    top: -60px; right: -60px;
+    width: 300px; height: 300px;
+    border-radius: 50%;
+    background: var(--accent);
+    opacity: 0.15;
+  }
 
-2.4 Information We Do Not Collect
-We do not collect:
-•	Your precise real-time location or GPS data
-•	Your contacts list
-•	Your camera roll or photos (unless you upload a profile picture, if this feature is enabled)
-•	Financial or payment information
-•	Government-issued identification documents
+  header::after {
+    content: '';
+    position: absolute;
+    bottom: -80px; left: 40%;
+    width: 200px; height: 200px;
+    border-radius: 50%;
+    background: var(--accent);
+    opacity: 0.08;
+  }
 
-3. How We Use Your Information
-We use the personal information we collect for the following purposes:
+  .header-inner {
+    max-width: 740px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
 
-3.1 Providing the Service
-•	Creating and managing your account
-•	Displaying your profile to other users of the App
-•	Enabling in-app messaging between users
-•	Facilitating skill-swap connections between users
-•	Processing reports submitted about other users
-•	Sending you notifications about new messages
+  .app-name {
+    font-family: 'DM Serif Display', serif;
+    font-size: 13px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 16px;
+    display: block;
+  }
 
-3.2 Security and Safety
-•	Verifying your identity for account security purposes
-•	Detecting, preventing, and responding to fraud, abuse, or violations of our Terms of Service
-•	Investigating reports of harmful or illegal content or conduct
-•	Enforcing our Terms of Service and Community Guidelines
-•	Complying with our legal obligations, including mandatory reporting requirements
+  header h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 400;
+    line-height: 1.15;
+    margin-bottom: 20px;
+  }
 
-3.3 Improving the Service
-•	Analysing aggregated, anonymised usage data to understand how the App is used
-•	Diagnosing technical problems and improving App performance
-•	Developing new features and improving existing ones
+  .meta {
+    font-size: 13px;
+    color: rgba(255,255,255,0.5);
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
 
-3.4 Communications
-•	Sending you important notices about the Service, including changes to our Terms or Privacy Policy
-•	Responding to your support requests or enquiries
-•	Sending push notifications about new messages (with your permission)
+  .meta span { display: flex; align-items: center; gap: 6px; }
 
-3.5 Legal Compliance
-•	Complying with applicable laws, regulations, and legal processes
-•	Responding to requests from government authorities and law enforcement
-•	Establishing, exercising, or defending legal claims
+  /* Summary banner */
+  .summary {
+    background: var(--accent-light);
+    border-left: 3px solid var(--accent);
+    max-width: 740px;
+    margin: 48px auto 0;
+    padding: 28px 36px;
+    border-radius: 0 8px 8px 0;
+  }
 
-4. How We Store and Protect Your Information
-4.1 Storage Location and Infrastructure
-Skills United uses Google Firebase to store and process your personal information. Firebase services used include:
-•	Firebase Authentication — for account creation and login
-•	Cloud Firestore — for storing your profile, skills, messages, and other App data
-•	Firebase Storage — for storing any uploaded files or images
-•	Firebase Analytics — for aggregated, anonymised usage statistics
+  .summary-label {
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--accent);
+    margin-bottom: 10px;
+  }
 
-By using the App, you acknowledge and consent that your personal information may be stored on servers located outside of Australia, including in the United States and other countries where Google operates data centres. We rely on Google's Standard Contractual Clauses and other appropriate safeguards for international data transfers.
+  .summary p {
+    font-size: 15px;
+    color: var(--ink);
+    line-height: 1.7;
+  }
 
-4.2 Security Measures
-We implement reasonable technical and organisational security measures to protect your personal information, including:
-•	Encryption of data in transit using HTTPS/TLS
-•	Encrypted storage of passwords — we never store your password in plain text
-•	Firebase Security Rules to restrict access to your data
-•	Optional two-factor authentication for your account
-•	Code obfuscation in the App's release build
-•	Input validation and sanitisation to prevent injection attacks
+  /* Main content */
+  main {
+    max-width: 740px;
+    margin: 0 auto;
+    padding: 56px 40px 80px;
+  }
 
-However, no method of electronic transmission or storage is 100% secure. While we take reasonable steps to protect your personal information, we cannot guarantee absolute security. You use the App at your own risk and we are not responsible for any unauthorised access to your account that results from your failure to protect your login credentials.
+  /* Section */
+  .section {
+    margin-bottom: 52px;
+    padding-bottom: 52px;
+    border-bottom: 1px solid var(--border);
+  }
 
-4.3 Data Retention
-We retain your personal information for as long as your account is active or as needed to provide you with the Service. Specifically:
-•	Account information — retained for the duration of your account and for a reasonable period after deletion to comply with legal obligations
-•	Messages — retained in our database for the duration of your account; deleted upon account deletion subject to any legal holds
-•	User reports — retained for a period necessary to investigate and resolve reports and to defend any legal claims
-•	Technical logs — retained for a limited period for security and diagnostic purposes
-•	Anonymised analytics data — may be retained indefinitely
+  .section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
 
-5. How We Share Your Information
-5.1 With Other Users
-Certain information you provide is displayed publicly on your profile and is visible to all users of the App, including:
-•	Your chosen username
-•	Your display name
-•	Your bio
-•	Your skills to teach and skills to learn
-•	Your generated avatar (initials and colour)
+  .section-header {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
 
-Messages you send to another user are visible to that user. Please be mindful of what personal information you share in messages, as we cannot control how other users use information you share with them.
+  .section-num {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2rem;
+    color: var(--section-num);
+    line-height: 1;
+    flex-shrink: 0;
+    min-width: 36px;
+  }
 
-5.2 With Service Providers
-We share your personal information with third-party service providers who assist us in operating the App, subject to confidentiality obligations. These include:
-•	Google LLC — Firebase services for data storage, authentication, and analytics
-•	Apple Inc. and Google LLC — app distribution via App Store and Google Play Store
-•	Push notification service providers — for delivering in-app notifications
+  h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--ink);
+    line-height: 1.2;
+  }
 
-5.3 For Legal Reasons
-We may disclose your personal information, including message content and account details, to third parties where we believe disclosure is necessary to:
-•	Comply with any applicable law, regulation, legal process, or enforceable governmental request
-•	Respond to requests from law enforcement authorities, including the Australian Federal Police, state police, or equivalent overseas authorities
-•	Comply with mandatory reporting obligations under Australian law
-•	Respond to notices from the eSafety Commissioner under the Online Safety Act 2021 (Cth)
-•	Enforce our Terms of Service or protect our rights
-•	Protect the safety of any person
-•	Detect, prevent, or address fraud, security, or technical issues
+  h3 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 28px 0 12px;
+  }
 
-We do not require a court order to disclose information to law enforcement where we have a good faith belief that disclosure is necessary to prevent imminent harm to any person.
+  p {
+    color: var(--ink-soft);
+    margin-bottom: 16px;
+    font-size: 15px;
+  }
 
-5.4 Business Transfers
-If we are involved in a merger, acquisition, sale of assets, or similar transaction, your personal information may be transferred as part of that transaction. We will notify you via the App or email before your personal information is transferred and becomes subject to a different privacy policy.
+  p:last-child { margin-bottom: 0; }
 
-5.5 No Sale of Data
-We do not sell, rent, or trade your personal information to third parties for their own marketing or commercial purposes.
+  ul {
+    list-style: none;
+    margin: 8px 0 16px;
+    padding: 0;
+  }
 
-6. Messages and In-App Communications
-Messages sent between users through the Skills United in-app chat are stored in our Firebase Firestore database. While we do not routinely monitor or read private messages, we reserve the right to review message content:
-•	When a user reports a message or conversation as violating our Terms of Service
-•	Where we have reason to believe that a message contains illegal content or a threat to safety
-•	Where required to do so by law or by a request from law enforcement
+  ul li {
+    font-size: 15px;
+    color: var(--ink-soft);
+    padding: 6px 0 6px 20px;
+    position: relative;
+    border-bottom: 1px solid var(--border);
+  }
 
-You should have no expectation that messages sent through the App are fully private or confidential. Do not send sensitive personal information, financial information, or content you wish to keep strictly private through the in-app messaging system.
+  ul li:last-child { border-bottom: none; }
 
-7. Your Privacy Rights
-Under the Privacy Act 1988 (Cth) and the Australian Privacy Principles, you have the following rights in relation to your personal information:
+  ul li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: 500;
+  }
 
-7.1 Right of Access
-You have the right to request access to the personal information we hold about you. To make an access request, please contact us at vanblerkdaniel@gmail.com. We will respond to your request within a reasonable time (generally within 30 days). We may charge a reasonable fee for providing access in certain circumstances.
+  a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s;
+  }
 
-7.2 Right to Correction
-You have the right to request that we correct any personal information we hold about you that is inaccurate, out of date, incomplete, irrelevant, or misleading. You can update most of your profile information directly within the App. For other corrections, please contact us at vanblerkdaniel@gmail.com.
+  a:hover { border-bottom-color: var(--accent); }
 
-7.3 Right to Deletion
-You may request deletion of your account and personal information by contacting us at vanblerkdaniel@gmail.com. Upon receiving a valid deletion request, we will delete or anonymise your personal information within a reasonable timeframe, except where we are required to retain it by law or for legitimate business purposes such as resolving disputes or enforcing our Terms of Service.
+  /* Contact card */
+  .contact-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 28px 32px;
+    margin-top: 20px;
+  }
 
-Please note that deleting your account will remove your profile from the App. However, messages you have sent to other users may remain visible to those users unless they also delete their accounts.
+  .contact-card p {
+    margin: 0;
+    line-height: 2;
+  }
 
-7.4 Right to Complain
-If you believe we have handled your personal information in a way that breaches the Privacy Act or the Australian Privacy Principles, you have the right to lodge a complaint with us first by contacting vanblerkdaniel@gmail.com. If you are not satisfied with our response, you may lodge a complaint with the Office of the Australian Information Commissioner (OAIC) at www.oaic.gov.au.
+  .contact-card strong {
+    color: var(--ink);
+    font-weight: 500;
+  }
 
-8. Children's Privacy
-Skills United is not intended for use by persons under the age of 18. We do not knowingly collect personal information from children under 18. If you are a parent or guardian and believe that your child has provided us with personal information, please contact us immediately at vanblerkdaniel@gmail.com. If we become aware that we have collected personal information from a child under 18, we will take steps to delete that information promptly.
+  /* Footer */
+  footer {
+    background: var(--ink);
+    color: rgba(255,255,255,0.4);
+    text-align: center;
+    padding: 32px 40px;
+    font-size: 13px;
+  }
 
-9. Third-Party Links and Services
-The App may contain links to third-party websites or services. This Privacy Policy does not apply to those third-party services. We encourage you to review the privacy policies of any third-party services you access through the App. We are not responsible for the privacy practices of third parties.
+  footer strong { color: rgba(255,255,255,0.7); }
 
-10. International Data Transfers
-As noted in Section 4, your personal information is stored using Google Firebase infrastructure, which operates globally. This means your personal information may be transferred to and processed in countries other than Australia, including the United States.
+  /* Responsive */
+  @media (max-width: 600px) {
+    header { padding: 44px 24px 40px; }
+    main { padding: 40px 24px 60px; }
+    .summary { margin: 32px 24px 0; padding: 20px 24px; }
+    .section-num { font-size: 1.5rem; min-width: 28px; }
+    h2 { font-size: 1.25rem; }
+  }
+</style>
+</head>
+<body>
 
-We take reasonable steps to ensure that any overseas recipients of your personal information are subject to privacy obligations that are at least comparable to the Australian Privacy Principles, including through Google's data processing terms and Standard Contractual Clauses.
+<header>
+  <div class="header-inner">
+    <span class="app-name">Skills United</span>
+    <h1>Privacy Policy</h1>
+    <div class="meta">
+      <span>Last updated: 15 May 2026</span>
+      <span>Effective: 15 May 2026</span>
+    </div>
+  </div>
+</header>
 
-By using the App, you expressly consent to the transfer of your personal information to overseas recipients as described in this Privacy Policy.
+<div class="summary">
+  <div class="summary-label">Privacy at a glance</div>
+  <p>We collect information you provide when registering and using the App, including your name, username, email, bio, and skills. We use Firebase (Google) to store your data. We do not sell your personal information. Messages between users are stored in our database. You can request deletion of your account and data by contacting us.</p>
+</div>
 
-11. Analytics and Tracking
-The App uses Firebase Analytics to collect aggregated, anonymised data about how users interact with the App. This data helps us understand usage patterns and improve the App. Firebase Analytics may use device identifiers and similar technologies.
+<main>
 
-We do not use cookies in the traditional web sense, as Skills United is a mobile application. However, Firebase and other third-party SDKs embedded in the App may use local storage, device identifiers, or similar technologies to function correctly.
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">1</span>
+      <h2>Introduction and Who We Are</h2>
+    </div>
+    <p>This Privacy Policy describes how <strong>dkvb.dev</strong> (ABN: 70 917 091 935) ("we", "us", "our", "Operator") collects, uses, stores, discloses, and protects personal information in connection with the Skills United mobile application ("App", "Platform", "Service").</p>
+    <p>We are committed to protecting your privacy and handling your personal information in accordance with the <em>Privacy Act 1988</em> (Cth) ("Privacy Act") and the Australian Privacy Principles ("APPs") contained in Schedule 1 of the Privacy Act.</p>
+    <p>By using Skills United, you consent to the collection, use, and disclosure of your personal information as described in this Privacy Policy. If you do not agree with this Privacy Policy, please do not use the App.</p>
+  </div>
 
-12. Push Notifications
-With your permission, the App may send you push notifications to alert you to new messages and other activity. You can manage your notification preferences in your device settings. Disabling push notifications does not affect your ability to use the App, but you may miss timely alerts about new messages.
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">2</span>
+      <h2>Information We Collect</h2>
+    </div>
 
-13. Data Breach Notification
-In the event of a data breach that is likely to result in serious harm to affected individuals, we will comply with our mandatory data breach notification obligations under the Privacy Act 1988 (Cth) (Notifiable Data Breaches scheme). This includes notifying affected individuals and the Office of the Australian Information Commissioner (OAIC) as required.
+    <h3>2.1 Information You Provide Directly</h3>
+    <p>When you register for and use Skills United, we collect information that you provide to us directly, including:</p>
+    <ul>
+      <li>Full name</li>
+      <li>Username (chosen by you, displayed publicly on your profile)</li>
+      <li>Email address</li>
+      <li>Password (stored in encrypted form — we do not have access to your plain-text password)</li>
+      <li>Profile biography / bio text</li>
+      <li>Skills you list as willing to teach</li>
+      <li>Skills you list as wanting to learn</li>
+      <li>Phone number (only if you choose to enable two-factor authentication)</li>
+      <li>Messages you send to other users through the in-app chat</li>
+      <li>Reports you submit about other users</li>
+    </ul>
 
-14. Changes to This Privacy Policy
-We may update this Privacy Policy from time to time to reflect changes in our practices, the App's features, or applicable law. When we make material changes, we will notify you through the App or by email where reasonably practicable, and update the "Last updated" date at the top of this policy.
+    <h3>2.2 Information Collected Automatically</h3>
+    <p>When you use the App, we and our service providers may automatically collect certain technical information, including:</p>
+    <ul>
+      <li>Device type and operating system version</li>
+      <li>App version</li>
+      <li>Date and time of access</li>
+      <li>Firebase Analytics data (aggregated usage statistics)</li>
+      <li>Crash reports and error logs</li>
+      <li>Authentication tokens and session data</li>
+    </ul>
 
-Your continued use of the App after changes are posted constitutes your acceptance of the revised Privacy Policy. We encourage you to review this Privacy Policy periodically.
+    <h3>2.3 Information from Third-Party Services</h3>
+    <p>If you choose to sign in using Google Sign-In, we may receive your name and email address from Google. We do not receive your Google password. The information we receive from Google is governed by Google's Privacy Policy in addition to this Privacy Policy.</p>
 
-15. How to Contact Us
-If you have any questions, concerns, or complaints about this Privacy Policy or our handling of your personal information, please contact our Privacy Officer:
+    <h3>2.4 Information We Do Not Collect</h3>
+    <ul>
+      <li>Your precise real-time location or GPS data</li>
+      <li>Your contacts list</li>
+      <li>Your camera roll or photos (unless you upload a profile picture, if this feature is enabled)</li>
+      <li>Financial or payment information</li>
+      <li>Government-issued identification documents</li>
+    </ul>
+  </div>
 
-Daniel van Blerk / dkvb.dev
-Attn: Privacy Officer
-Email: vanblerkdaniel@gmail.com
-Address: PMB1, Ingham, Qld 4850, Australia
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">3</span>
+      <h2>How We Use Your Information</h2>
+    </div>
 
-We aim to respond to all privacy enquiries within 30 days. If your complaint is not resolved to your satisfaction, you may refer it to the Office of the Australian Information Commissioner (OAIC):
-Website: www.oaic.gov.au
-Phone: 1300 363 992
-GPO Box 5218, Sydney NSW 2001
+    <h3>3.1 Providing the Service</h3>
+    <ul>
+      <li>Creating and managing your account</li>
+      <li>Displaying your profile to other users of the App</li>
+      <li>Enabling in-app messaging between users</li>
+      <li>Facilitating skill-swap connections between users</li>
+      <li>Processing reports submitted about other users</li>
+      <li>Sending you notifications about new messages</li>
+    </ul>
 
+    <h3>3.2 Security and Safety</h3>
+    <ul>
+      <li>Verifying your identity for account security purposes</li>
+      <li>Detecting, preventing, and responding to fraud, abuse, or violations of our Terms of Service</li>
+      <li>Investigating reports of harmful or illegal content or conduct</li>
+      <li>Enforcing our Terms of Service and Community Guidelines</li>
+      <li>Complying with our legal obligations, including mandatory reporting requirements</li>
+    </ul>
 
-This Privacy Policy is governed by the laws of Australia. Skills United is committed to handling your personal information in accordance with the Privacy Act 1988 (Cth) and the Australian Privacy Principles.
+    <h3>3.3 Improving the Service</h3>
+    <ul>
+      <li>Analysing aggregated, anonymised usage data to understand how the App is used</li>
+      <li>Diagnosing technical problems and improving App performance</li>
+      <li>Developing new features and improving existing ones</li>
+    </ul>
+
+    <h3>3.4 Communications</h3>
+    <ul>
+      <li>Sending you important notices about the Service, including changes to our Terms or Privacy Policy</li>
+      <li>Responding to your support requests or enquiries</li>
+      <li>Sending push notifications about new messages (with your permission)</li>
+    </ul>
+
+    <h3>3.5 Legal Compliance</h3>
+    <ul>
+      <li>Complying with applicable laws, regulations, and legal processes</li>
+      <li>Responding to requests from government authorities and law enforcement</li>
+      <li>Establishing, exercising, or defending legal claims</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">4</span>
+      <h2>How We Store and Protect Your Information</h2>
+    </div>
+
+    <h3>4.1 Storage Location and Infrastructure</h3>
+    <p>Skills United uses Google Firebase to store and process your personal information. Firebase services used include:</p>
+    <ul>
+      <li>Firebase Authentication — for account creation and login</li>
+      <li>Cloud Firestore — for storing your profile, skills, messages, and other App data</li>
+      <li>Firebase Storage — for storing any uploaded files or images</li>
+      <li>Firebase Analytics — for aggregated, anonymised usage statistics</li>
+    </ul>
+    <p>By using the App, you acknowledge and consent that your personal information may be stored on servers located outside of Australia, including in the United States and other countries where Google operates data centres. We rely on Google's Standard Contractual Clauses and other appropriate safeguards for international data transfers.</p>
+
+    <h3>4.2 Security Measures</h3>
+    <ul>
+      <li>Encryption of data in transit using HTTPS/TLS</li>
+      <li>Encrypted storage of passwords — we never store your password in plain text</li>
+      <li>Firebase Security Rules to restrict access to your data</li>
+      <li>Optional two-factor authentication for your account</li>
+      <li>Code obfuscation in the App's release build</li>
+      <li>Input validation and sanitisation to prevent injection attacks</li>
+    </ul>
+    <p>However, no method of electronic transmission or storage is 100% secure. While we take reasonable steps to protect your personal information, we cannot guarantee absolute security.</p>
+
+    <h3>4.3 Data Retention</h3>
+    <ul>
+      <li>Account information — retained for the duration of your account and for a reasonable period after deletion to comply with legal obligations</li>
+      <li>Messages — retained in our database for the duration of your account; deleted upon account deletion subject to any legal holds</li>
+      <li>User reports — retained for a period necessary to investigate and resolve reports and to defend any legal claims</li>
+      <li>Technical logs — retained for a limited period for security and diagnostic purposes</li>
+      <li>Anonymised analytics data — may be retained indefinitely</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">5</span>
+      <h2>How We Share Your Information</h2>
+    </div>
+
+    <h3>5.1 With Other Users</h3>
+    <p>Certain information you provide is displayed publicly on your profile and is visible to all users of the App, including your username, display name, bio, skills, and generated avatar. Messages you send to another user are visible to that user.</p>
+
+    <h3>5.2 With Service Providers</h3>
+    <ul>
+      <li>Google LLC — Firebase services for data storage, authentication, and analytics</li>
+      <li>Apple Inc. and Google LLC — app distribution via App Store and Google Play Store</li>
+      <li>Push notification service providers — for delivering in-app notifications</li>
+    </ul>
+
+    <h3>5.3 For Legal Reasons</h3>
+    <p>We may disclose your personal information to third parties where necessary to comply with applicable law, respond to law enforcement requests (including the Australian Federal Police), comply with the eSafety Commissioner under the <em>Online Safety Act 2021</em> (Cth), enforce our Terms of Service, or protect the safety of any person.</p>
+    <p>We do not require a court order to disclose information to law enforcement where we have a good faith belief that disclosure is necessary to prevent imminent harm to any person.</p>
+
+    <h3>5.4 Business Transfers</h3>
+    <p>If we are involved in a merger, acquisition, or sale of assets, your personal information may be transferred as part of that transaction. We will notify you before your personal information becomes subject to a different privacy policy.</p>
+
+    <h3>5.5 No Sale of Data</h3>
+    <p>We do not sell, rent, or trade your personal information to third parties for their own marketing or commercial purposes.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">6</span>
+      <h2>Messages and In-App Communications</h2>
+    </div>
+    <p>Messages sent through the Skills United in-app chat are stored in our Firebase Firestore database. While we do not routinely monitor or read private messages, we reserve the right to review message content when a user submits a report, where we have reason to believe a message contains illegal content or a safety threat, or where required by law.</p>
+    <p>You should have no expectation that messages sent through the App are fully private or confidential. Do not send sensitive personal or financial information through the in-app messaging system.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">7</span>
+      <h2>Your Privacy Rights</h2>
+    </div>
+    <p>Under the <em>Privacy Act 1988</em> (Cth) and the Australian Privacy Principles, you have the following rights:</p>
+
+    <h3>7.1 Right of Access</h3>
+    <p>You may request access to the personal information we hold about you by contacting us at <a href="mailto:vanblerkdaniel@gmail.com">vanblerkdaniel@gmail.com</a>. We will respond within 30 days.</p>
+
+    <h3>7.2 Right to Correction</h3>
+    <p>You may update most profile information directly within the App. For other corrections, contact us at <a href="mailto:vanblerkdaniel@gmail.com">vanblerkdaniel@gmail.com</a>.</p>
+
+    <h3>7.3 Right to Deletion</h3>
+    <p>You may request deletion of your account and personal information by contacting us at <a href="mailto:vanblerkdaniel@gmail.com">vanblerkdaniel@gmail.com</a>. We will action your request within a reasonable timeframe, except where retention is required by law.</p>
+
+    <h3>7.4 Right to Complain</h3>
+    <p>If you believe we have breached the Privacy Act, contact us first at <a href="mailto:vanblerkdaniel@gmail.com">vanblerkdaniel@gmail.com</a>. If unsatisfied, you may lodge a complaint with the Office of the Australian Information Commissioner (OAIC) at <a href="https://www.oaic.gov.au" target="_blank">www.oaic.gov.au</a>.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">8</span>
+      <h2>Children's Privacy</h2>
+    </div>
+    <p>Skills United is not intended for use by persons under the age of 18. We do not knowingly collect personal information from children under 18. If you believe your child has provided us with personal information, please contact us immediately at <a href="mailto:vanblerkdaniel@gmail.com">vanblerkdaniel@gmail.com</a>.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">9</span>
+      <h2>Third-Party Links and Services</h2>
+    </div>
+    <p>The App may contain links to third-party websites or services. This Privacy Policy does not apply to those services. We encourage you to review the privacy policies of any third-party services you access through the App.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">10</span>
+      <h2>International Data Transfers</h2>
+    </div>
+    <p>Your personal information is stored using Google Firebase infrastructure, which operates globally. This means your personal information may be transferred to and processed in countries other than Australia, including the United States. We take reasonable steps to ensure overseas recipients are subject to privacy obligations comparable to the Australian Privacy Principles, including through Google's data processing terms and Standard Contractual Clauses.</p>
+    <p>By using the App, you expressly consent to the transfer of your personal information to overseas recipients as described in this Privacy Policy.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">11</span>
+      <h2>Analytics and Tracking</h2>
+    </div>
+    <p>The App uses Firebase Analytics to collect aggregated, anonymised data about how users interact with the App. Firebase and other third-party SDKs embedded in the App may use local storage, device identifiers, or similar technologies to function correctly.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">12</span>
+      <h2>Push Notifications</h2>
+    </div>
+    <p>With your permission, the App may send you push notifications to alert you to new messages and other activity. You can manage your notification preferences in your device settings. Disabling push notifications does not affect your ability to use the App.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">13</span>
+      <h2>Data Breach Notification</h2>
+    </div>
+    <p>In the event of a data breach likely to result in serious harm, we will comply with our mandatory data breach notification obligations under the <em>Privacy Act 1988</em> (Cth) Notifiable Data Breaches scheme, including notifying affected individuals and the OAIC as required.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">14</span>
+      <h2>Changes to This Privacy Policy</h2>
+    </div>
+    <p>We may update this Privacy Policy from time to time. When we make material changes, we will notify you through the App or by email and update the "Last updated" date at the top of this policy. Your continued use of the App after changes are posted constitutes your acceptance of the revised Privacy Policy.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">15</span>
+      <h2>How to Contact Us</h2>
+    </div>
+    <p>If you have any questions, concerns, or complaints about this Privacy Policy, please contact our Privacy Officer:</p>
+    <div class="contact-card">
+      <p>
+        <strong>Daniel van Blerk / dkvb.dev</strong><br>
+        Attn: Privacy Officer<br>
+        Email: <a href="mailto:vanblerkdaniel@gmail.com">vanblerkdaniel@gmail.com</a><br>
+        Address: PMB1, Ingham, Qld 4850, Australia
+      </p>
+    </div>
+    <p style="margin-top: 20px;">We aim to respond to all privacy enquiries within 30 days. If your complaint is not resolved to your satisfaction, you may refer it to the Office of the Australian Information Commissioner (OAIC):</p>
+    <div class="contact-card">
+      <p>
+        <strong>Office of the Australian Information Commissioner</strong><br>
+        Website: <a href="https://www.oaic.gov.au" target="_blank">www.oaic.gov.au</a><br>
+        Phone: 1300 363 992<br>
+        GPO Box 5218, Sydney NSW 2001
+      </p>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <p>This Privacy Policy is governed by the laws of Australia.<br>
+  <strong>Skills United</strong> is committed to handling your personal information in accordance with the <em>Privacy Act 1988</em> (Cth) and the Australian Privacy Principles.</p>
+</footer>
+
+</body>
+</html>
