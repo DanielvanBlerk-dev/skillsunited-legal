@@ -18,7 +18,7 @@ Built solo with **Kotlin** and **Firebase**.
 
 | Browse | Profile | Chat |
 |---|---|---|
-| _screenshot_ | _screenshot_ | _screenshot_ |
+| [`/screenshots`](./screenshots/screenshot4.jpg) | _screenshot_ | _screenshot_ |
 
 ---
 
