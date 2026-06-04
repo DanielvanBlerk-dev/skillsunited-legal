@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/matchRequestRoot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chat Requests"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="56dp"
+            android:paddingBottom="12dp"/>
+
+        <!-- Tab buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp">
+
+            <Button
+                android:id="@+id/btnTabIncoming"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:text="Incoming"
+                android:textSize="13sp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/btnTabOutgoing"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:text="Outgoing"
+                android:textSize="13sp"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvEmpty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No pending chat requests"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:padding="32dp"
+            android:visibility="gone"/>
+
+        <!-- Incoming requests list -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvIncoming"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:paddingBottom="80dp"
+            android:visibility="visible"/>
+
+        <!-- Outgoing requests list -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvOutgoing"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:paddingBottom="80dp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</FrameLayout>

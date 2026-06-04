@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark mode overrides -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_hint">#AAAAAA</color>
+</resources>

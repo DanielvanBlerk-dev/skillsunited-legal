@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="baseBannerContainer" type="id"/>
+    <item name="btnInbox" type="id"/>
+    <item name="inboxBadge" type="id"/>
+</resources>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:id="@+id/profileRoot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Profile"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="24dp"/>
+
+            <TextView
+                android:id="@+id/tvBioLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bio"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/etBio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tell others about yourself..."
+                android:minLines="3"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:background="@drawable/rounded_input"
+                android:padding="12dp"
+                android:layout_marginBottom="24dp"/>
+
+            <TextView
+                android:id="@+id/tvTeachLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Skills I can teach"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <EditText
+                    android:id="@+id/etTeachSkill"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="e.g. Guitar, Python, Spanish"
+                    android:inputType="textCapWords"
+                    android:layout_marginEnd="8dp"/>
+
+                <Button
+                    android:id="@+id/btnAddTeach"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add"/>
+
+            </LinearLayout>
+
+            <!-- Skills to teach rendered here programmatically -->
+            <LinearLayout
+                android:id="@+id/llTeachSkills"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="24dp"/>
+
+            <TextView
+                android:id="@+id/tvLearnLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Skills I want to learn"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <EditText
+                    android:id="@+id/etLearnSkill"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="e.g. Piano, Cooking, French"
+                    android:inputType="textCapWords"
+                    android:layout_marginEnd="8dp"/>
+
+                <Button
+                    android:id="@+id/btnAddLearn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add"/>
+
+            </LinearLayout>
+
+            <!-- Skills to learn rendered here programmatically -->
+            <LinearLayout
+                android:id="@+id/llLearnSkills"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="24dp"/>
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save Profile"
+                android:layout_marginBottom="8dp"/>
+
+            <Button
+                android:id="@+id/btnMfa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Set up Two-Factor Authentication"
+                android:layout_marginTop="8dp"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+
+            <TextView
+                android:id="@+id/tvTermsFooter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Terms of Service · Privacy Policy"
+                android:textSize="11sp"
+                android:textAlignment="center"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:textColor="#888888"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

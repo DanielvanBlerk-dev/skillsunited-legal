@@ -14,7 +14,7 @@ Built solo with **Kotlin** and **Firebase**.
 
 <!-- Replace these with your own links/files once uploaded -->
 - 🎥 **Walkthrough video:** _add link_
-- 🖼️ **Screenshots:** see [`/screenshots`](./public/screenshots)
+- 🖼️ **Screenshots:** see [`/screenshots`](./screenshots)
 
 | Browse | Profile | Chat |
 |---|---|---|
