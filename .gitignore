@@ -1,0 +1,35 @@
+# ---- Secrets & credentials (NEVER COMMIT) ----
+google-services.json
+**/google-services.json
+*.jks
+*.keystore
+keystore.properties
+local.properties
+
+# ---- Android / Gradle build output ----
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+bin/
+gen/
+out/
+build/
+.gradle/
+release/
+captures/
+
+# ---- Android Studio / IntelliJ ----
+.idea/
+*.iml
+.DS_Store
+local.properties
+
+# ---- Logs ----
+*.log
+
+# ---- Keep these (they are safe and SHOULD be committed) ----
+# !firestore.rules
+# !firestore.indexes.json
+# !app/google-services.json.example
